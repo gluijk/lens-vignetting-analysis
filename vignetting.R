@@ -1,11 +1,11 @@
-# Análisis de viñeteo en ópticas con R 
-# www.datosimagensonido.com
+# AnÃ¡lisis de viÃ±eteo en Ã³pticas con R 
+# www.overfitting.net
 
-# Conversión de ARW (Sony) a DNG con Adobe DNG Converter
+# ConversiÃ³n de ARW (Sony) a DNG con Adobe DNG Converter
 # Revelado lineal con DCRAW: dcraw -v -r 1 1 1 1 -o 0 -4 -T *.DNG
-# Conversión de TIFF a PNG en Photoshop
+# ConversiÃ³n de TIFF a PNG en Photoshop
 
-# Leemos imágenes
+# Leemos imÃ¡genes
 library(png)
 f35=readPNG("35mm.png")
 f50=readPNG("50mm.png")
@@ -29,11 +29,11 @@ for (objetivo in 1:NUMOBJ) {
     }
 }
 
-# Dibujamos gráfica
+# Dibujamos grÃ¡fica
 xaxis=seq(-0.5, 0.5, len=1024)
           
-plot(xaxis, log2(perfil[,2]/max(perfil[,2])), type='l', col="red", main="Perfil de viñeteo",
-     xlab="Diagonal", ylab="Viñeteo (EV)") # 50mm
+plot(xaxis, log2(perfil[,2]/max(perfil[,2])), type='l', col="red", main="Perfil de viÃ±eteo",
+     xlab="Diagonal", ylab="ViÃ±eteo (EV)") # 50mm
 lines(xaxis, log2(perfil[,1]/max(perfil[,1])), col="green") # 35mm
 lines(xaxis, log2(perfil[,3]/max(perfil[,3])), col="blue") # 85mm
 
