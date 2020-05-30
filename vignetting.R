@@ -1,5 +1,6 @@
 # Análisis de viñeteo en ópticas con R 
 # www.overfitting.net
+# https://www.overfitting.net/2017/03/correccion-de-vineteo-y-dominantes-en.html
 
 # Conversión de ARW (Sony) a DNG con Adobe DNG Converter
 # Revelado lineal con DCRAW: dcraw -v -r 1 1 1 1 -o 0 -4 -T *.DNG
